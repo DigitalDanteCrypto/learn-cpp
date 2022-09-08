@@ -4,21 +4,25 @@ int main()
 {
 
   double p;
-  double q;
-  double c;
+  double r;
+  double s;
+  
+  double pRate = 0.049;
+  double rRate = 0.1305;
+  double sRate =  0.1144;
 
   double dollars;
 
-  std::cout << "🇲🇽 Enter number of Pesos: ";
+  std::cout << " Enter number of Colombian Pesos: ";
   std::cin >> p;
 
-  std::cout << "🇬🇹 Enter number of Guatemalan Quetzals: ";
-  std::cin >> q;
+  std::cout << " Enter number of Brazilian Reais: ";
+  std::cin >> r;
 
-  std::cout << "🇸🇻 Enter number of Salvadoran Colons: ";
-  std::cin >> c;
+  std::cout << "Enter number of Peruvian Soles: ";
+  std::cin >> s;
 
-  dollars = 0.049 * p + 0.1305 * q + 0.1144 * c;
+  dollars =  (p * pRate) + (r * rRate) + (s * sRate);
 
   std::cout << "Total USD = $" << dollars << "\n";
 
